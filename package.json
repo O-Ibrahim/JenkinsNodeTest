@@ -1,0 +1,22 @@
+{
+  "name": "jenkinsnodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/O-Ibrahim/JenkinsNodeTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/O-Ibrahim/JenkinsNodeTest/issues"
+  },
+  "homepage": "https://github.com/O-Ibrahim/JenkinsNodeTest#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
