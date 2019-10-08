@@ -36,7 +36,7 @@ pipeline{
         always{
            // echo "Cleaning up..."
            // sh "rm -r /var/jenkins_home/jobs/GithubTest/"
-           // echo "Done"
+           echo "Done"
         }
     }
 }
