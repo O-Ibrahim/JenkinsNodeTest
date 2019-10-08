@@ -29,11 +29,9 @@ pipeline{
     post{
         success{
             echo "Build successful."
-            mail bcc: '', body: "<b>Success</b>", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "Project Worked", to: "Osama.i.adam@gmail.com";
         }
         failure{
             echo "Build failed."
-            mail bcc: '', body: "<b>Fail</b>", cc: '', charset: 'UTF-8', from: '', mimeType: 'text/html', replyTo: '', subject: "Project Failed", to: "Osama.i.adam@gmail.com";
         }
         always{
            echo "Cleaning up..."
