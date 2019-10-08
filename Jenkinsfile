@@ -34,9 +34,9 @@ pipeline{
             echo "Build failed."
         }
         always{
-            echo "Cleaning up..."
-            sh "rm -r /var/jenkins_home/jobs/"
-            echo "Done"
+           // echo "Cleaning up..."
+           // sh "rm -r /var/jenkins_home/jobs/GithubTest/"
+           // echo "Done"
         }
     }
 }
