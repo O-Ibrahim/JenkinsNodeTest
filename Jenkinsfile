@@ -7,7 +7,7 @@ pipeline{
         stage("Cloning Git"){
             steps{
                 echo "Initiate Cloning"
-                git "git@github.com:O-Ibrahim/JenkinsNodeTest.git"
+                git url: 'git@github.com:O-Ibrahim/JenkinsNodeTest.git', branch: 'master'
                 echo "Initiate Done"
             }
         }
@@ -34,8 +34,8 @@ pipeline{
             echo "Build failed."
         }
         always{
-           // echo "Cleaning up..."
-           // sh "rm -r /var/jenkins_home/jobs/GithubTest/"
+           echo "Cleaning up..."
+           sh 'rm node_modules -rf'
            echo "Done"
         }
     }
