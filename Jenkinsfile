@@ -7,7 +7,7 @@ pipeline{
         stage("Cloning Git"){
             steps{
                 echo "Initiate Cloning"
-                git url: 'git@github.com:O-Ibrahim/JenkinsNodeTest.git', branch: 'master'
+                git "https://github.com/O-Ibrahim/JenkinsNodeTest"
                 echo "Initiate Done"
             }
         }
